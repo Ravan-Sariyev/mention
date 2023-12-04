@@ -1,0 +1,778 @@
+/* header */
+
+header {
+  height: 64px;
+}
+
+header .header-search {
+  border-radius: 50px;
+  width: 300px;
+  height: 3rem;
+  background-color: var(--secondary-color);
+}
+
+header .header-search input {
+  background: transparent;
+}
+
+header .profile {
+  width: 36px;
+  height: 36px;
+  background-color: var(--primary-color);
+  padding: 9px;
+  border-radius: 9999px;
+}
+
+/* login page*/
+
+#login {
+  background-color: var(--primary-color);
+  height: 90vh;
+}
+
+.login-card {
+  height: 100%;
+}
+
+.login-card .login-content {
+  width: 648px;
+  height: 515px;
+  background-color: var(--secondary-color);
+  padding: 32px 180px;
+  border-radius: 12px;
+}
+
+.login-card .login-content form {
+  width: 100%;
+}
+
+.login-card .login-content form .input-container {
+  width: 100%;
+  background: var(--white);
+  border-radius: 10px;
+  height: 49px;
+  padding: 16px 24px;
+}
+
+.login-card .login-content form .remember-my-account {
+  width: 100%;
+  margin: 12px 0 32px;
+}
+
+.login-card .login-content form button {
+  background-color: var(--primary-color-2);
+  width: 100%;
+  height: 50px;
+  border-radius: 32px;
+  font-weight: 700;
+}
+
+.next-button {
+  background-color: var(--primary-color-2);
+  width: 100%;
+  height: 50px;
+  border-radius: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* registration page */
+
+.registration-link a {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+#registration {
+  background-color: var(--primary-color);
+  height: 90vh;
+}
+
+#registration .registration-card {
+  height: 100%;
+}
+
+#registration .registration-card .registration-content {
+  width: 648px;
+  height: auto;
+  background-color: var(--secondary-color);
+  padding: 32px 88px;
+  border-radius: 12px;
+}
+
+#registration .registration-card .registration-content .registration-box {
+  height: 150px;
+  padding: 10px 24px;
+  text-align: center;
+  line-height: normal;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+#registration
+  .registration-card
+  .registration-content
+  .primary-registration-box {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+#registration
+  .registration-card
+  .registration-content
+  .secondary-registration-box {
+  background: var(--primary-color-2);
+  color: var(--black);
+}
+
+#registration .login-card .login-content {
+  height: 480px;
+}
+
+/* landing page */
+
+#landing-page h2,
+h3,
+h4 {
+  color: var(--black);
+}
+
+/* hero */
+
+#hero {
+  margin-top: 27.5px;
+}
+
+#hero p {
+  color: var(--white);
+  margin: 27px 0 24px;
+}
+
+#hero .hero-card {
+  border-radius: 12px;
+}
+
+#hero .hero-card-lg {
+  background: url("../assets/images/woman-working-sitting-laptop-top-view-1.png");
+  width: 766px;
+  height: 550px;
+}
+
+#hero .hero-card-lg h1 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 77px;
+}
+
+#hero .hero-card-lg h1 span {
+  color: var(--primary-color-2);
+}
+
+#hero .hero-card-lg .dashed-button {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+#hero .hero-card-md {
+  background: url("../assets/images/woman-working-sitting-laptop-top-view-2.png");
+  width: 564px;
+  height: 351px;
+}
+
+#hero .hero-card-md .stats .stat {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border-radius: 65px;
+}
+
+#hero .hero-card-md .diagram-icon {
+  background-color: var(--primary-color-2);
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  border-radius: 9999px;
+}
+
+#hero .hero-card-sm {
+  background: var(--primary-color);
+  width: 564px;
+  height: 185px;
+}
+
+#hero .hero-card-border {
+  border: 1px dashed var(--white);
+  height: 100%;
+  border-radius: 8px;
+  color: var(--white);
+  font-size: var(--text-xl);
+}
+
+#hero .hero-card-border .dashed-button {
+  border-color: var(--primary-color-2);
+  margin-top: 18px;
+  color: var(--primary-color-2);
+}
+
+#hero .messages {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  width: 60%;
+  border-radius: 20px;
+}
+
+#hero .new-messages {
+  position: absolute;
+  right: 23em;
+  bottom: -2rem;
+  width: 60%;
+  border-radius: 20px;
+}
+
+.open-messages {
+  height: 200%;
+}
+
+/* categories */
+
+.categories-card {
+  width: 400px;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  border-bottom: 1.5px solid var(--black);
+}
+
+.categories-card p {
+  font-size: 14px;
+}
+
+/* why mention */
+
+#why-mention {
+  margin-top: 88px;
+}
+
+.why-card {
+  width: 412px;
+  overflow: hidden;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.why-card-primary {
+  background-color: var(--primary-color);
+}
+
+.why-card-secondary {
+  background-color: var(--primary-color-2);
+}
+
+.why-card-primary .why-card-content h4 {
+  color: var(--white);
+}
+
+.why-card-secondary .why-card-content h4 {
+  color: var(--black);
+}
+
+.why-card-content p {
+  font-size: 14px;
+  color: var(--white);
+}
+
+.why-card-secondary p {
+  color: var(--black);
+}
+
+.why-card-lg {
+  width: 412px;
+  height: 180px;
+}
+
+.tick-circle {
+  margin-bottom: 26px;
+}
+
+/* how do we work */
+
+#how-do-we-work {
+  margin-top: 88px;
+}
+
+.how-do-we-work {
+  width: 660px;
+  height: 349px;
+  background: url("../assets/images/vladyslav-tobolenko-unsplash-2.png");
+  padding: 60px;
+}
+
+.how-do-we-work h2 {
+  font-size: 66px;
+  color: var(--white) !important;
+  width: 12ch;
+}
+
+.how-do-we-work h2 span {
+  color: var(--primary-color-2);
+}
+
+.how-card {
+  background: var(--secondary-color);
+  border-radius: 12px;
+  border-bottom: 1.5px solid var(--primary-color);
+}
+
+.how-card:not(:first-child) {
+  margin-top: 16px;
+}
+
+.how-card h5 {
+  margin-bottom: 6px;
+  font-weight: var(--font-semibold);
+}
+
+.how-card p {
+  font-size: 14px;
+}
+
+.how-card-number {
+  font-size: 48px;
+  color: var(--primary-color);
+  font-weight: var(--font-semibold);
+}
+
+/* customer reviews */
+
+#customer-reviews {
+  margin-top: 88px;
+}
+
+.customer-reviews .customer-review {
+  padding: 32px 32px 24px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  width: 432px;
+  border-radius: 12px;
+}
+
+.company {
+  border-top: 1px dashed var(--white);
+  padding-top: 20px;
+}
+
+.company .company-profile {
+  width: 28px;
+  height: 28px;
+  padding: 7px;
+  border-radius: 9999px;
+  overflow: hidden;
+  background: var(--black);
+}
+
+/* footer */
+
+footer {
+  margin-top: 58px;
+  padding-bottom: 12px;
+}
+
+/* is elanlari page */
+
+.search-bar {
+  border-radius: 50px;
+  width: full;
+  background-color: var(--secondary-color);
+  padding: 16px 40px;
+  margin-top: 28px;
+}
+
+.elan-yerlesdir-card {
+  background-color: var(--primary-color-2);
+  border-radius: 20px;
+}
+
+.elan-yerlesdir-card select {
+  background-color: var(--black);
+  border-radius: 48px;
+  padding: 12px 28px;
+  color: var(--white);
+}
+
+.son-elanlar-filter select:not(.clear-filters-button) {
+  background-color: var(--secondary-color);
+  border-radius: 100px;
+}
+
+.clear-filters-button {
+  color: var(--primary-color);
+}
+
+.elan-card {
+  width: 620px;
+  border-radius: 12px;
+}
+
+.elan-card.elan-card-sm {
+  width: 298px;
+  height: 158px;
+  padding: 28px 40px 32px 40px;
+}
+
+.elan-card.elan-card-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.elan-card.elan-card-secondary {
+  background-color: var(--secondary-color);
+  color: var(--black);
+  border-bottom: 1px solid var(--Primary-Color-1, #202361);
+}
+
+.elan-card-third {
+  background-color: var(--primary-color-2);
+}
+
+.elan-card-secondary .elan-card-amount {
+  color: var(--black);
+}
+
+.elan-card-primary h4 {
+  color: var(--white);
+}
+
+.elan-card-secondary h4 {
+  color: var(--primary-color);
+}
+
+.elan-card .company {
+  border: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.elan-card-amount {
+  font-size: 22px;
+  color: var(--primary-color-2);
+}
+
+.category-card {
+  padding: 14px 20px;
+  font-size: 12px;
+  border-radius: 32px;
+  cursor: default;
+}
+
+.category-card-primary {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.category-card-secondary {
+  background-color: var(--primary-color-2);
+  color: var(--black);
+}
+
+/* elan detallari page */
+
+#elan-detallari-page h2 {
+  font-size: 36px;
+  margin: 32px 0 28px;
+}
+
+#elan-detallari-page h3 {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+#elan-detallari-page .dashed-button {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  margin-top: 28px;
+}
+
+#elan-detallari-page .rounded-icon {
+  width: 33px;
+  height: 33px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#elan-detallari-page .rounded-icon.rounded-icon-primary {
+  background-color: var(--primary-color);
+}
+
+#elan-detallari-page .rounded-icon.rounded-icon-secondary {
+  background-color: var(--primary-color-2);
+}
+
+.elan-detallari-cards {
+  gap: 14px;
+}
+
+.elan-detallari-cards .elan-card-primary {
+  padding: 32px 72px 36px 40px;
+}
+
+.elan-detallari-cards .bookmark.bookmark-icon-fill .bookmark-icon {
+  display: block;
+}
+
+.bookmark-elan-detallari {
+  background-color: var(--primary-color-2) !important;
+  display: block !important;
+}
+
+.bookmark-elan-detallari .bookmark-icon {
+  display: block !important;
+}
+
+/*  elana-muraciet page */
+#muraciet-detallari-page h3 {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+#muraciet-detallari-page .dashed-button {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  margin-top: 28px;
+}
+
+#elana-muraciet-page form {
+  border-radius: 12px;
+  background-color: var(--primary-color);
+}
+
+#elana-muraciet-page h3 {
+  margin-bottom: 28px;
+  font-size: 32px;
+  color: var(--primary-color-2);
+}
+
+#elana-muraciet-page form textarea {
+  background-color: var(--white);
+  border-radius: 12px;
+  height: 246px;
+}
+
+#elana-muraciet-page form .input {
+  height: 88px;
+  background-color: var(--white);
+  border-radius: 12px;
+  margin-top: 14px;
+}
+
+/* freelancer card*/
+
+.freelancer-card {
+  width: 318px;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  border-bottom: 1px solid var(--Primary-Color-1, #202361);
+}
+
+.freelancer-card .freelancer-profile {
+  background-color: var(--black);
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+}
+
+/* elan yerlesdir */
+
+#elan-yerlesdir-page h3 {
+  margin-bottom: 28px;
+  font-size: 32px;
+  color: var(--primary-color-2);
+}
+
+#elan-yerlesdir-page form {
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+#elan-yerlesdir-page form textarea {
+  background-color: var(--white);
+  border-radius: 12px;
+  height: 246px;
+}
+
+#elan-yerlesdir-page form .input {
+  padding: 14px 32px;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 999px;
+}
+
+#elan-yerlesdir-page form .input.select-input {
+  width: 30%;
+}
+
+/* freelancers page */
+
+.category-card-third {
+  background-color: var(--secondary-color);
+  color: var(--black);
+  padding: 12px 28px;
+}
+
+.category-card-third.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.freelancer-page-category-filter .add-icon {
+  display: none;
+  width: 17px;
+  height: 17px;
+}
+
+.freelancer-page-category-filter.active .add-icon {
+  display: block;
+}
+
+#freelancers-page .elan-yerlesdir-card {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+#freelancers-page .elan-yerlesdir-card h3 {
+  color: var(--white);
+}
+
+#freelancers-page .elan-yerlesdir-card button {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.leaderboard-card {
+  width: 100vh;
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid var(--primary-color, #202361);
+  border-radius: 12px;
+}
+
+.leaderboard-card .profile {
+  width: 36px;
+  height: 36px;
+  background-color: var(--black);
+  padding: 9px;
+  border-radius: 9999px;
+}
+
+.leaderboard-number {
+  max-width: 25px;
+  width: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* profile details page */
+
+.profile {
+  width: 204px;
+  height: 204px;
+  padding: 51px;
+  background-color: var(--black);
+  height: 200px;
+  padding: 9px;
+  border-radius: 9999px;
+}
+
+#profile-details-page h2 {
+  font-size: 32px;
+}
+
+.summary-card-primary {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  height: 246px;
+}
+
+.summary-card-secondary {
+  color: var(--black);
+  background-color: var(--primary-color-2);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.summary-card-primary h4 {
+  color: var(--primary-color-2);
+}
+
+/* musterinin profile page'i */
+
+#musteri-profile-details-page h2 {
+  font-size: 32px;
+}
+
+.profil-statistikası {
+  height: auto;
+  padding: 32px 72px 36px 40px;
+}
+
+.muracietler-card {
+  width: 432px;
+  border-radius: 12px;
+}
+
+.muracietler-card .profile {
+  width: 36px;
+  height: 36px;
+  background-color: var(--black);
+  padding: 9px;
+  border-radius: 9999px;
+}
+
+/* muraciet detallari page */
+
+#muraciet-detallari-page h3 {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+#muraciet-detallari-page .dashed-button {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  margin-top: 28px;
+}
+
+#muraciet-detallari-page form {
+  border-radius: 12px;
+  background-color: var(--primary-color);
+}
+
+#muraciet-detallari-page h3 {
+  margin-bottom: 28px;
+  font-size: 32px;
+  color: var(--primary-color-2);
+}
+
+#muraciet-detallari-page form textarea {
+  background-color: var(--white);
+  border-radius: 12px;
+  height: 246px;
+}
+
+#muraciet-detallari-page form .input {
+  height: 88px;
+  background-color: var(--white);
+  border-radius: 12px;
+  margin-top: 14px;
+}
+
+/* chats page */
+
+#chats-page {
+  min-height: 89vh;
+  min-width: 100vh;
+}

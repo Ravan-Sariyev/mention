@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/icons/profile.svg" />
+    <title>Mention | Registration</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
+
+    <script src="https://accounts.google.com/gsi/client" async></script>
+  </head>
+  <style>
+    html,
+    body {
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="./is-elanlari.html">İş elanları</a>
+            <a href="./freelancers.html">Frilanserlər</a>
+
+            <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
+          </nav>
+          <div class="header-search flex items-center px-6 px-3">
+            <input
+              type="text"
+              placeholder="Axtarış"
+              class="input"
+              id="searchInput"
+            />
+            <div>
+              <a href="./search-page.html">
+                <img src="./assets/icons/search-normal.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <a href="./frilanserin-gorduyu-profile-details.html" class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div id="login">
+      <div class="flex items-center justify-center login-card">
+        <div class="login-content flex items-center flex-col gap-6 relative">
+          <a href="./registration-2.html" class="absolute" style="left: 40px;">
+            <img src="./assets/icons/back-arrow-icon.svg" alt="back-arrow" />
+          </a>
+          <h1 class="font-bold">Qeydiyyat</h1>
+
+          <form class="mt-7" action="./registration-4.html">
+            <div class="input-container flex items-center mb-4">
+              <input
+                type="text"
+                class="input"
+                placeholder="İstifadəçi adı"
+                required
+              />
+            </div>
+
+            <div class="input-container flex items-center mb-4">
+              <input
+                type="text"
+                class="input"
+                placeholder="Şirkətin adı və ya öz ad soyadınız"
+              />
+            </div>
+
+            <div class="mt-3 mb-8 text-xs">
+              <div class="flex gap-3 items-start">
+                <span class="mt-1">
+                  <img
+                    src="./assets/icons/info-circle-icon.svg"
+                    alt="info-circle"
+                  />
+                </span>
+                <span>
+                  Şirkətin profilini yaratmaq istəmirsinizsə sadəcə şəxsi
+                  adınızı yazın.</span
+                >
+              </div>
+            </div>
+            <button type="submit">Davam et</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/icons/diagram.svg" />
+    <title>Mention | Is elanlari</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="./is-elanlari.html">İş elanları</a>
+            <a href="./freelancers.html">Frilanserlər</a>
+
+            <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
+          </nav>
+          <div class="flex items-center px-6 px-3">
+            <div>
+              <a href="./search-page.html">
+                <img src="./assets/icons/search-normal.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <a href="./frilanserin-gorduyu-profile-details.html" class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main id="is-elanlari-page">
+      <div class="container">
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+          <a href="/">Ana səhifə</a>
+          <span>/</span>
+          <a href="#" class="active">İş Elanları</a>
+        </div>
+
+        <!-- searchbar -->
+        <div class="search-bar flex items-center justify-between">
+          <input
+            type="text"
+            id="searchInput"
+            class="input"
+            placeholder="Açar söz daxil et"
+          />
+          <img
+            src="./assets/icons/search-normal.svg"
+            alt="search-normal-icon"
+          />
+        </div>
+
+        <!-- elan yerlesdir card -->
+        <div
+          class="elan-yerlesdir-card px-12 py-9 mt-8 flex items-center justify-between"
+        >
+          <div>
+            <h3 class="mb-2">Sən də frilanser axtarırsan?</h3>
+            <p>
+              Upwork makes it affordable to up your work and take advantage of
+              low transaction rates.
+            </p>
+          </div>
+          <a
+            href="./elan-yerlesdir.html"
+            style="border-radius: 9999px;"
+            class="font-semibold px-7 py-3 bg-black-color text-white"
+          >
+            Elan yerləşdir
+          </a>
+        </div>
+
+        <!-- son elanlar -->
+        <section id="son-elanlar" class="mt-9">
+          <h2 class="mb-6">
+            Son elanlar
+          </h2>
+          <div
+            class="flex items-center justify-between son-elanlar-filter mb-8"
+          >
+            <div class="flex items-center gap-3">
+              <select
+                class="font-medium px-8 py-3 flex items-center justify-between gap-2"
+              >
+                <option>Kateqoriyalar</option>
+                <option>Kateqoriyalar</option>
+                <option>Kateqoriyalar</option>
+                <span>
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow-right-icon"
+                  />
+                </span>
+              </select>
+              <select class="px-8 py-3 flex items-center justify-between gap-2">
+                <option>Əmək haqqı</option>
+                <option>Əmək haqqı</option>
+                <option>Əmək haqqı</option>
+                <option>Əmək haqqı</option>
+                <span>
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow-right-icon"
+                  />
+                </span>
+              </select>
+              <select class="px-8 py-3 flex items-center justify-between gap-2">
+                <option>Tarix</option>
+                <option>Tarix</option>
+                <option>Tarix</option>
+                <option>Tarix</option>
+                <span>
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow-right-icon"
+                  />
+                </span>
+              </select>
+              <select class="px-8 py-3 flex items-center justify-between gap-2">
+                <option>Müraciət sayı</option>
+                <option>Müraciət sayı</option>
+                <option>Müraciət sayı</option>
+                <option>Müraciət sayı</option>
+                <span>
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow-right-icon"
+                  />
+                </span>
+              </select>
+              <a class="px-8 py-3 font-semibold clear-filters-button" href="">
+                Filterləri təmizlə
+              </a>
+            </div>
+            <select
+              class="px-8 py-3 flex items-center justify-between gap-2"
+              type="button"
+            >
+              <option>Sıralama</option>
+              <option>Sıralama</option>
+              <option>Sıralama</option>
+              <option>Sıralama</option>
+              <option>Sıralama</option>
+              <span>
+                <img
+                  src="./assets/icons/arrow-right.svg"
+                  alt="arrow-right-icon"
+                />
+              </span>
+            </select>
+          </div>
+
+          <!-- son elanlar  -->
+          <div
+            class="elan-cards flex items-center justify-center flex-wrap gap-6 daha-cox-goster-content"
+          >
+            <div class="elan-card elan-card-primary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div
+                  class="bookmark bookmark-icon-fill p-3 flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="elan-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
+                >
+              </div>
+            </div>
+
+            <div class="elan-card elan-card-primary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div
+                  class="bookmark bookmark-icon-fill p-3 flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="elan-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
+                >
+              </div>
+            </div>
+
+            <div class="elan-card elan-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="elan-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
+                >
+              </div>
+            </div>
+
+            <div class="elan-card elan-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="elan-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
+                >
+              </div>
+            </div>
+
+            <div class="elan-card elan-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="elan-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
+                >
+              </div>
+            </div>
+
+            <div class="elan-card elan-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="elan-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
+                >
+              </div>
+            </div>
+
+            <div class="elan-card elan-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="elan-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
+                >
+              </div>
+            </div>
+
+            <div class="elan-card elan-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="elan-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mt-13">
+            <button type="button" class="dashed-button daha-cox-goster-button">
+              Daha çox göstər
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container flex items-center justify-between">
+        <span>© 2023 Mention.</span>
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="flex items-center gap-8">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
